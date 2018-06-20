@@ -10,7 +10,7 @@ var bio = {
 	},
 	welcomeMessage: 'My online Resume',
 	skills: ['HTML', 'CSS', 'JavaScript', 'PHP', 'VBA', 'Delphi'],
-	bioPic: 'images/profilePhoto.jpg',
+	biopic: 'images/profilePhoto.jpg',
 	display: function() {
 		var formattedName = HTMLheaderName.replace('%data%', bio.name);
 		var formattedRole = HTMLheaderRole.replace('%data%', bio.role);
@@ -18,11 +18,11 @@ var bio = {
 		var formattedEmail = HTMLemail.replace('%data%', bio.contacts.email);
 		var formattedGithub = HTMLgithub.replace('%data%', bio.contacts.github);
 		var formattedLocation = HTMLlocation.replace('%data%', bio.contacts.location);
-		var formattedBioPic = HTMLbioPic.replace('%data%',bio.bioPic);
+		var formattedBioPic = HTMLbioPic.replace('%data%',bio.biopic);
 		var formattedWelcomeMessage = HTMLwelcomeMsg.replace('%data%',bio.welcomeMessage);
 		
 		$('#header').prepend(formattedName + formattedRole);
-		$('#topContacts').append(formattedMobile + formattedEmail + formattedGithub + formattedLocation);
+		$('#topContacts, #footerContacts').append(formattedMobile + formattedEmail + formattedGithub + formattedLocation);
 		$('#header').append(formattedBioPic);
 		$('#header').append(formattedWelcomeMessage);
 		
@@ -39,19 +39,19 @@ var bio = {
 var education = {
 	schools: [
 		{
-			'name': 'Commenius University',
-			'location': 'Bratislava, Slovakia',
-			'degree': 'Magister',
-			'majors': ['Mathematics', 'Informatics'],
-			'dates': '2004-2009',
+			name: 'Commenius University',
+			location: 'Bratislava, Slovakia',
+			degree: 'Magister',
+			majors: ['Mathematics', 'Informatics'],
+			dates: '2004-2009',
 		}
 	],
 	onlineCourses: [
 		{
-			'title': 'Programming Mobile Applications for Android Handheld Systems: Part 1',
-			'school': 'University of Maryland, College Park',
-			'dates': 'April 2014',
-			'url': 'https://www.coursera.org/learn/android-programming'
+			title: 'Programming Mobile Applications for Android Handheld Systems: Part 1',
+			school: 'University of Maryland, College Park',
+			dates: 'April 2014',
+			url: 'https://www.coursera.org/learn/android-programming'
 		}
 	],
 	display: function() {
@@ -96,32 +96,32 @@ var education = {
 var work = {
 	jobs: [
 		{
-			'employer': 'Primary School with Kindergarten in Podolie',
-			'title': 'Teacher',
-			'location': 'Podolie',
-			'dates': '2010-2013',
-			'description': 'Teaching Mathematics and Informatics. Also work as Admin for school.'
+			employer: 'Primary School with Kindergarten in Podolie',
+			title: 'Teacher',
+			location: 'Podolie',
+			dates: '2010-2013',
+			description: 'Teaching Mathematics and Informatics. Also work as Admin for school.'
 		},
 		{
-			'employer': 'Primary School in Stará Turá',
-			'title': 'Teacher',
-			'location': 'Stará Turá',
-			'dates': '2013-2015',
-			'description': 'Teaching Mathemetics and Informatics.'
+			employer: 'Primary School in Stará Turá',
+			title: 'Teacher',
+			location: 'Stará Turá',
+			dates: '2013-2015',
+			description: 'Teaching Mathemetics and Informatics.'
 		},
 		{
-			'employer': 'Private Elementary School for Pupils with General Intellectual Talent',
-			'title': 'Teacher',
-			'location': 'Bratislava',
-			'dates': '2015-2016',
-			'description': 'Teaching Mathemetics and Informatics.'
+			employer: 'Private Elementary School for Pupils with General Intellectual Talent',
+			title: 'Teacher',
+			location: 'Bratislava',
+			dates: '2015-2016',
+			description: 'Teaching Mathemetics and Informatics.'
 		},
 		{
-			'employer': 'AT&T GNS Slovakia',
-			'title': '...',
-			'location': 'Bratislava',
-			'dates': '2016-until now',
-			'description': 'Creating Excel based reports. Creating automation scripts and programms. Creating orders.'
+			employer: 'AT&T GNS Slovakia',
+			title: '...',
+			location: 'Bratislava',
+			dates: '2016-until now',
+			description: 'Creating Excel based reports. Creating automation scripts and programms. Creating orders.'
 		}
 	],
 	display: function() {
@@ -147,10 +147,10 @@ var work = {
 var projects = {
 	projects: [
 		{
-			'title': 'OM scorecard',
-			'dates': '09/2017-04/2018',
-			'description': 'Microsoft Power BI project. Scoreacrd for Order Managers. Whole project contains also PHP script for uploading data to MySQL database.',
-			'images': []
+			title: 'OM scorecard',
+			dates: '09/2017-04/2018',
+			description: 'Microsoft Power BI project. Scoreacrd for Order Managers. Whole project contains also PHP script for uploading data to MySQL database.',
+			images: ['images/scorecard.png']
 		},
 	],
 	display: function() {

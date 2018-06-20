@@ -1,0 +1,41 @@
+body {
+	font-weight: 500;
+}
+
+h2 {
+	color: #7c7c7c;
+}
+
+.project-entry img {
+	width: 50%;
+}
+
+#workExperience {
+	background-color: #c4c4c4;
+}
+
+.work-entry {
+	margin: 20px 0 20px 0;
+	border-bottom: 1px solid;
+}
+
+#projects {
+	background-color: #dadada;
+}
+
+#education{
+	background-color: #c4c4c4;
+}
+
+.education-entry {
+	margin: 20px 0 20px 0;
+	border-bottom: 1px solid;
+}
+
+#mapDiv {
+	background-color: #dadada;
+}
+
+.biopic {
+	float: right;
+}
